@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { Upload, PlayCircle, RefreshCcw } from "lucide-react";
-import { BUCKET, supabase } from "../lib/supabase";
+import { BUCKET, hasSupabaseConfig, supabase } from "../lib/supabase";
 
 const fnBase = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1`;
 
@@ -21,6 +21,11 @@ export default function ControlCenter() {
   );
 
   const refreshQueue = async () => {
+    if (!hasSupabaseConfig || !supabase) {
+      setStatus("Supabase config missing. Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY in Cloudflare env.");
+      return;
+    }
+
     const { data, error } = await supabase.storage.from(BUCKET).list("", { limit: 1000, offset: 0 });
     if (error) {
       setStatus(`Queue refresh failed: ${error.message}`);
@@ -31,6 +36,11 @@ export default function ControlCenter() {
 
   const uploadDocs = async () => {
     if (!files.length) return;
+    if (!hasSupabaseConfig) {
+      setStatus("Supabase config missing. Upload is disabled until env vars are set.");
+      return;
+    }
+
     setUploading(true);
     setStatus("Uploading files...");
 
@@ -57,6 +67,11 @@ export default function ControlCenter() {
   };
 
   const runAnalysis = async () => {
+    if (!hasSupabaseConfig) {
+      setStatus("Supabase config missing. Analyze is disabled until env vars are set.");
+      return;
+    }
+
     setAnalyzing(true);
     setStatus("Running AI analysis and updating Supabase...");
 
