@@ -113,6 +113,14 @@ a { text-decoration: none; color: inherit; }
   transition: color var(--transition);
 }
 .header-nav a:hover { color: #fff; }
+.nav-admin {
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 999px;
+  padding: 6px 14px;
+}
+.nav-admin:hover {
+  background: rgba(255,255,255,0.1);
+}
 
 /* ── HERO ───────────────────────────────────────────────── */
 .hero {
@@ -256,6 +264,49 @@ a { text-decoration: none; color: inherit; }
   text-transform: uppercase;
   letter-spacing: 0.07em;
   color: var(--text-muted);
+}
+
+/* ── DATA INTELLIGENCE BOARD ───────────────────────────── */
+.intel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.intel-card {
+  background: linear-gradient(160deg, #ffffff 0%, #f8fbff 100%);
+  border: 1px solid #d6e3f3;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 18px;
+  min-height: 320px;
+  animation: cardIn 0.45s ease both;
+}
+.intel-card:nth-child(2) { animation-delay: 0.08s; }
+.intel-card:nth-child(3) { animation-delay: 0.16s; }
+.intel-card:nth-child(4) { animation-delay: 0.24s; }
+.intel-card h3 {
+  margin: 0 0 14px;
+  color: #0f2f4a;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.intel-card canvas {
+  width: 100% !important;
+  height: 245px !important;
+}
+.intel-card-wide {
+  grid-column: span 2;
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ── TAGS GRID (thematic areas) ─────────────────────────── */
@@ -448,4 +499,13 @@ a { text-decoration: none; color: inherit; }
   .hero-headline { font-size: 2rem; }
   .section { padding: 52px 0; }
   .footer-inner { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 920px) {
+  .intel-grid {
+    grid-template-columns: 1fr;
+  }
+  .intel-card-wide {
+    grid-column: span 1;
+  }
 }

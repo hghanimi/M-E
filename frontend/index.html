@@ -21,9 +21,11 @@
       </div>
       <nav class="header-nav">
         <a href="#impact">Impact</a>
+        <a href="#intelligence">Intelligence</a>
         <a href="#studies">Studies</a>
         <a href="#tools">Tools</a>
         <a href="#contact">Contact</a>
+        <a href="dashboard.html" class="nav-admin">Dashboard</a>
       </nav>
     </div>
   </header>
@@ -68,6 +70,36 @@
         <h2 class="section-title">Portfolio at a Glance</h2>
         <div class="stats-grid" id="stats-grid">
           <!-- populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DATA INTELLIGENCE ─────────────────────────────── -->
+    <section id="intelligence" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Data Intelligence Board</h2>
+        <p class="section-sub">Dynamic visual summaries generated from portfolio evidence</p>
+
+        <div class="intel-grid">
+          <article class="intel-card">
+            <h3>Sector Coverage</h3>
+            <canvas id="sectorChart" aria-label="Sector coverage chart"></canvas>
+          </article>
+
+          <article class="intel-card">
+            <h3>Country Presence</h3>
+            <canvas id="countryChart" aria-label="Country presence chart"></canvas>
+          </article>
+
+          <article class="intel-card intel-card-wide">
+            <h3>Tool Capability Matrix</h3>
+            <canvas id="toolChart" aria-label="Tool capability chart"></canvas>
+          </article>
+
+          <article class="intel-card intel-card-wide">
+            <h3>Impact Trajectory</h3>
+            <canvas id="trajectoryChart" aria-label="Impact trajectory chart"></canvas>
+          </article>
         </div>
       </div>
     </section>
@@ -148,6 +180,7 @@
 
   <!-- Supabase JS (CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Control Center</title>
+  <meta name="description" content="Admin dashboard for uploading documents and triggering AI analysis." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <div class="bg-shape bg-shape-1"></div>
+  <div class="bg-shape bg-shape-2"></div>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div>
+        <p class="eyebrow">M&E Portfolio Admin</p>
+        <h1>Control Center</h1>
+      </div>
+      <a href="index.html" class="link-btn">View Public Portfolio</a>
+    </div>
+  </header>
+
+  <main class="wrap grid">
+    <section class="panel upload-panel">
+      <h2>1. Upload Documents</h2>
+      <p class="muted">Drop transcripts, reports, and notes. Files go to the private Supabase bucket.</p>
+
+      <label class="dropzone" for="file-input" id="dropzone">
+        <input id="file-input" type="file" multiple accept=".txt,.md,.csv,.json,.doc,.docx,.pdf" />
+        <span class="drop-title">Drop files here or click to browse</span>
+        <span class="drop-sub">Supports text, docs, CSV, and PDFs</span>
+      </label>
+
+      <ul id="selected-files" class="file-list"></ul>
+
+      <button id="upload-btn" class="primary-btn" disabled>Upload to Supabase</button>
+      <p id="upload-status" class="status-text"></p>
+    </section>
+
+    <section class="panel analyze-panel">
+      <h2>2. Analyze and Publish</h2>
+      <p class="muted">Runs ingestion + GPT synthesis + database update in one click.</p>
+
+      <button id="analyze-btn" class="accent-btn">Analyze New Files and Update Website</button>
+      <p id="analyze-status" class="status-text"></p>
+
+      <div class="timeline" id="timeline">
+        <div class="step pending" data-step="upload">Upload queued</div>
+        <div class="step pending" data-step="ingest">Ingestion</div>
+        <div class="step pending" data-step="ai">AI synthesis</div>
+        <div class="step pending" data-step="publish">Publish</div>
+      </div>
+    </section>
+
+    <section class="panel files-panel">
+      <h2>3. File Queue Monitor</h2>
+      <p class="muted">See what is already processed vs waiting for analysis.</p>
+      <button id="refresh-files" class="ghost-btn">Refresh</button>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>File</th>
+              <th>Size</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="files-tbody">
+            <tr><td colspan="3" class="empty">Loading files...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
