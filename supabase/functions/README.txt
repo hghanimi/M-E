@@ -16,4 +16,4 @@ Deploy commands (from your machine with Supabase CLI):
 
 Set secrets:
 - supabase secrets set OPENAI_API_KEY=...
-- supabase secrets set SUPABASE_STORAGE_BUCKET=raw-documents
+- supabase secrets set STORAGE_BUCKET=raw-documents

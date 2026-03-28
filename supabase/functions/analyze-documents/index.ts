@@ -5,7 +5,7 @@ import { corsHeaders } from "../_shared/cors.ts";
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL") || "";
 const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "";
 const OPENAI_API_KEY = Deno.env.get("OPENAI_API_KEY") || "";
-const DEFAULT_BUCKET = Deno.env.get("SUPABASE_STORAGE_BUCKET") || "raw-documents";
+const DEFAULT_BUCKET = Deno.env.get("STORAGE_BUCKET") || "raw-documents";
 
 const privacySentinel = ["confidential", "name:", "patient id", "site location:"];
 
