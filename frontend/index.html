@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M&amp;E Specialist | Professional Portfolio</title>
+  <meta name="description" content="Professional portfolio of an M&E Specialist — impact data, case studies, tools and geographic reach." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── HEADER ──────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="header-name">
+        <span class="name-text">Your Name</span>
+        <span class="name-title">Monitoring &amp; Evaluation Specialist</span>
+      </div>
+      <nav class="header-nav">
+        <a href="#impact">Impact</a>
+        <a href="#studies">Studies</a>
+        <a href="#tools">Tools</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── HERO ────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="hero-label">Evidence-Driven Development</p>
+      <h1 class="hero-headline">Turning Field Data Into<br/>Actionable Impact</h1>
+      <p class="hero-sub">
+        M&amp;E professional specialising in quantitative &amp; qualitative evaluation,
+        data systems design, and capacity building across global development programmes.
+      </p>
+      <div class="hero-cta">
+        <a href="#impact" class="btn btn-primary">View Impact</a>
+        <a href="#studies" class="btn btn-outline">Case Studies</a>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--bg)"/></svg>
+    </div>
+  </section>
+
+  <!-- ── LOADING / ERROR STATE ───────────────────────────── -->
+  <div id="loading-banner" class="status-banner loading" aria-live="polite">
+    <span class="spinner"></span> Loading portfolio data…
+  </div>
+  <div id="error-banner" class="status-banner error hidden" aria-live="assertive">
+    ⚠ Could not load portfolio data. Please try again later.
+  </div>
+
+  <!-- ── LAST UPDATED ────────────────────────────────────── -->
+  <div class="container">
+    <p id="last-updated" class="last-updated hidden"></p>
+  </div>
+
+  <main id="portfolio-content" class="hidden">
+
+    <!-- ── IMPACT STATS ──────────────────────────────────── -->
+    <section id="impact" class="section">
+      <div class="container">
+        <h2 class="section-title">Portfolio at a Glance</h2>
+        <div class="stats-grid" id="stats-grid">
+          <!-- populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ── THEMATIC AREAS ────────────────────────────────── -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Thematic Areas</h2>
+        <p class="section-sub">Sectors covered across evaluated programmes</p>
+        <div class="tags-grid" id="thematic-areas">
+          <!-- populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STAR CASE STUDIES ─────────────────────────────── -->
+    <section id="studies" class="section">
+      <div class="container">
+        <h2 class="section-title">Case Studies</h2>
+        <p class="section-sub">STAR-method summaries of key evaluation assignments</p>
+        <div class="studies-grid" id="star-studies">
+          <!-- populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ── GEOGRAPHIC REACH ──────────────────────────────── -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Geographic Reach</h2>
+        <p class="section-sub">Countries where evaluation work has been conducted</p>
+        <div class="country-grid" id="geo-countries">
+          <!-- populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TOOLS & TECHNOLOGY ────────────────────────────── -->
+    <section id="tools" class="section">
+      <div class="container">
+        <h2 class="section-title">Tools &amp; Technology</h2>
+        <p class="section-sub">Data collection, analysis and visualisation platforms</p>
+        <div class="tools-grid" id="tool-expertise">
+          <!-- populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PARTNERS & DONORS ─────────────────────────────── -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Partners &amp; Donors</h2>
+        <p class="section-sub">Organisations supported through evaluation services</p>
+        <div class="donor-grid" id="donor-list">
+          <!-- populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── CONTACT ─────────────────────────────────────────── -->
+  <section id="contact" class="section contact-section">
+    <div class="container contact-inner">
+      <h2 class="section-title light">Get In Touch</h2>
+      <p class="section-sub light">Open to consultancy, remote and field-based M&amp;E assignments.</p>
+      <a href="mailto:your@email.com" class="btn btn-primary">your@email.com</a>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ──────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year"></span> M&amp;E Specialist Portfolio</span>
+      <span class="footer-note">Data updated automatically via AI pipeline</span>
+    </div>
+  </footer>
+
+  <!-- Supabase JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

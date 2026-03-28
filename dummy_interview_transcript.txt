@@ -1,0 +1,167 @@
+FIELD INTERVIEW TRANSCRIPT — QUALITATIVE DATA COLLECTION
+=========================================================
+Project Title  : Strengthening Community Health Systems in East Africa
+Interview Type : Key Informant Interview (KII) — Beneficiary Follow-Up
+Country        : Kenya
+County         : [COUNTY NAME REDACTED FOR PRIVACY]
+Interview Date : [DATE REDACTED]
+Interviewer ID : EVAL-04
+Respondent ID  : BENE-KE-117  [Name withheld per data protection policy]
+Location       : [SITE LOCATION REDACTED]
+Duration       : Approximately 45 minutes
+Language       : Swahili (simultaneous interpretation to English)
+
+NOTE TO DATA MANAGER: This transcript contains raw qualitative data.
+It is classified as INTERNAL USE ONLY. Do not share externally.
+All names, precise site locations, and identifying details have been
+replaced with codes at the point of transcription.
+
+=========================================================
+PAGE 1 OF 2
+=========================================================
+
+INTERVIEWER (EVAL-04):
+Thank you for agreeing to speak with us today. As I explained, your
+responses will be kept strictly confidential and will only be used in
+aggregate form for our programme evaluation. Please feel free to speak
+openly. Can you start by telling me how you first heard about the
+Maternal Health Clinic services offered in this area?
+
+RESPONDENT (BENE-KE-117):
+I heard about it from a community health volunteer who visited our
+village — I think it was in early 2023. She organised a community
+meeting and explained that a new programme had started. She said
+pregnant women and new mothers could receive free antenatal check-ups,
+iron supplements, and safe-delivery education. Before the programme
+came, the nearest facility was very far, and many women, including
+myself, were delivering at home.
+
+INTERVIEWER (EVAL-04):
+You mentioned delivering at home before. How has that changed since the
+programme began?
+
+RESPONDENT (BENE-KE-117):
+It has changed a lot. I myself have attended four antenatal visits this
+pregnancy, which I was told to do by the clinic staff. They use a
+tablet — I think the name was KoboCollect — to fill in all my
+information. It felt very organised. The nurse said that information
+goes to the county health office. I felt like someone was keeping
+track of us, and that was reassuring.
+
+INTERVIEWER (EVAL-04):
+Could you give us a sense of how many women in your community are now
+using the clinic services?
+
+RESPONDENT (BENE-KE-117):
+In our village alone it is difficult to count exactly, but at the last
+group meeting the community health volunteer said that over 2,800
+women from surrounding villages had enrolled in the programme since
+it started. For our village specifically, I would estimate around 340
+to 400 women regularly attend. The numbers have been growing — more
+people have heard about it through the radio announcements.
+
+INTERVIEWER (EVAL-04):
+Can you describe any specific changes in how the community thinks about
+maternal health since the programme arrived?
+
+RESPONDENT (BENE-KE-117):
+The biggest change I have seen is with the men. Before, many husbands
+did not want to discuss pregnancy or accompany their wives to the
+clinic. The programme has a component specifically for husbands — they
+call it the "Partners in Health" session. My husband attended two of
+those sessions. He now reminds me of my clinic appointments himself.
+There is a general sense that this is a family issue, not just a
+women's issue. I think that is important for Gender equality.
+
+INTERVIEWER (EVAL-04):
+The programme also has a nutrition component. Have you seen any impact
+from that?
+
+RESPONDENT (BENE-KE-117):
+Yes. There are monthly cooking demonstrations at the sub-county
+community centre. They teach mothers how to prepare nutritious meals
+using locally available foods. I learned a lot — things like how
+groundnuts and green leafy vegetables are important during breastfeeding.
+I have passed this knowledge on to my sister-in-law. Word spreads.
+
+=========================================================
+PAGE 2 OF 2
+=========================================================
+
+INTERVIEWER (EVAL-04):
+Shifting slightly — the programme also works across borders. Are you
+aware of any activities that extend beyond Kenya?
+
+RESPONDENT (BENE-KE-117):
+I heard from the programme officer that a similar project is running
+in Uganda and Tanzania. I do not know the details, but I believe it
+uses the same approach — the community volunteer model and the tablet
+data collection. She said the results from all three countries would
+be combined into one big report for the donor.
+
+INTERVIEWER (EVAL-04):
+You mentioned a programme officer. Did she say anything about who is
+funding this programme?
+
+RESPONDENT (BENE-KE-117):
+She mentioned a large international organisation — I think she said
+something like a United Nations health body and a European development
+fund. She was careful not to mention specific names but said they had
+very strict reporting rules, which is why the data collection with the
+tablets is so important. Everything must be recorded precisely.
+
+INTERVIEWER (EVAL-04):
+From your perspective, what has been the single biggest achievement of
+this programme?
+
+RESPONDENT (BENE-KE-117):
+For me personally, it is the feeling of safety. Before the programme,
+I was anxious about my pregnancy. I did not know if something was wrong.
+Now I have a health card, I have regular check-ups, and I have a number
+to call if there is an emergency. I believe the number of mothers who
+die during childbirth has gone down in this area — the nurse told us
+that the programme has supported more than 15,000 safe deliveries
+across all the project sites since inception.
+
+INTERVIEWER (EVAL-04):
+That is a significant number. Finally, is there anything you feel the
+programme could do better, or any challenges you would like to mention?
+
+RESPONDENT (BENE-KE-117):
+The biggest challenge is still transport. Even with the clinic nearby,
+some women from remote areas still struggle to come in consistently.
+There are also periods when the iron supplement supply runs short and
+the clinic has nothing to give. I think if the supply chain could be
+improved — perhaps using the same data system to predict when stock
+will run out — it would help enormously. I have heard that the
+programme uses Power BI dashboards for monitoring. If those dashboards
+could be linked to the stock levels, maybe the supply gaps could be
+caught earlier.
+
+INTERVIEWER (EVAL-04):
+Thank you so much for sharing your experience. Your input is very
+valuable to our evaluation. As a reminder, your identity will remain
+completely confidential and none of your personal details will appear
+in any public report or website.
+
+RESPONDENT (BENE-KE-117):
+Thank you. I hope the evaluation helps to improve things for women
+who come after me.
+
+=========================================================
+END OF TRANSCRIPT
+=========================================================
+
+FIELD NOTES (Evaluator EVAL-04, confidential — internal use only):
+- Respondent was articulate and engaged throughout the interview.
+- Tools mentioned by respondent: KoboCollect (data collection),
+  Power BI (programme monitoring dashboards).
+- Thematic areas surfaced: Maternal Health, Gender, Nutrition.
+- Countries referenced: Kenya (primary), Uganda, Tanzania.
+- Scale indicator: 15,000+ safe deliveries mentioned across project sites;
+  approximately 2,800 women enrolled in the Kenya sub-region alone.
+- Donor reference: UN health agency + European development fund (unconfirmed
+  names — respondent did not provide specifics; do not publish).
+- Transcript reviewed and coded by: EVAL-04
+- Coding status: PENDING SUPERVISOR REVIEW
+=========================================================

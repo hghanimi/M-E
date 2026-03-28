@@ -1,0 +1,18 @@
+# .gitignore
+# ── Secrets — NEVER commit these ──────────────────
+.env
+
+# ── Python ────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# ── Pipeline output (local fallback only) ─────────
+portfolio-data.json
+
+# ── OS ────────────────────────────────────────────
+.DS_Store
+Thumbs.db

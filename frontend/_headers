@@ -1,0 +1,10 @@
+# Cloudflare Pages — HTTP Security Headers
+# Applied to every response served from your site.
+# See: https://developers.cloudflare.com/pages/configuration/headers/
+
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Content-Security-Policy: default-src 'none'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src https://*.supabase.co wss://*.supabase.co; img-src 'self' data:; manifest-src 'self'
