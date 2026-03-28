@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Control Panel</title>
+  <meta name="description" content="Upload files, run AI analysis, and update Supabase portfolio data." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="control.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="panel">
+      <p class="eyebrow">M&E Admin</p>
+      <h1>Upload and Analyze</h1>
+      <p class="sub">Upload your files to Supabase, then run AI analysis to update the portfolio database in one click.</p>
+
+      <div class="drop" id="dropzone">
+        <input id="file-input" type="file" multiple accept=".txt,.md,.csv,.json,.pdf,.doc,.docx" />
+        <p class="drop-title">Drop files here or click to choose</p>
+        <p class="drop-sub">Private bucket: raw-documents</p>
+      </div>
+
+      <ul id="file-list" class="file-list"></ul>
+
+      <div class="actions">
+        <button id="upload-btn" class="btn btn-teal" disabled>1) Upload</button>
+        <button id="analyze-btn" class="btn btn-orange">2) Analyze + Update Supabase</button>
+      </div>
+
+      <div class="status" id="status">Ready.</div>
+
+      <div class="steps">
+        <div id="step-upload" class="step">Upload</div>
+        <div id="step-ai" class="step">AI Analyze</div>
+        <div id="step-db" class="step">DB Update</div>
+      </div>
+
+      <p class="small">If upload works but analyze fails, deploy Supabase Edge Functions first.</p>
+      <a class="link" href="index.html">Back to Portfolio</a>
+    </section>
+  </main>
+
+  <script src="control.js"></script>
+</body>
+</html>
