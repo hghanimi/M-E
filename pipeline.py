@@ -180,7 +180,12 @@ def _list_storage_objects(bucket: str) -> list[dict]:
     response = requests.post(
         f"{SUPABASE_URL}/storage/v1/object/list/{bucket}",
         headers={**_supabase_headers(), "Content-Type": "application/json"},
-        json={"limit": 1000, "offset": 0, "sortBy": {"column": "name", "order": "asc"}},
+        json={
+            "prefix": "",
+            "limit": 1000,
+            "offset": 0,
+            "sortBy": {"column": "name", "order": "asc"},
+        },
         timeout=30,
     )
     response.raise_for_status()
